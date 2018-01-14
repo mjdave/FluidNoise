@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B0C1EA30D30AE550053AC58 /* HelpDocs in Resources */ = {isa = PBXBuildFile; fileRef = 5B0C1EA20D30AE550053AC58 /* HelpDocs */; };
+		5B0C1F6F0D31EF940053AC58 /* FNTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C1F6E0D31EF940053AC58 /* FNTextFieldCell.m */; };
+		5B0C218A0D37490A0053AC58 /* FNMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C21890D37490A0053AC58 /* FNMainWindowController.m */; };
+		5B0C23040D395EBB0053AC58 /* FNImageExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C23030D395EBB0053AC58 /* FNImageExportViewController.m */; };
+		5B0C23090D3960050053AC58 /* ImageExportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B0C23070D3960050053AC58 /* ImageExportView.xib */; };
+		5B0C23510D396DA30053AC58 /* ExportingProgress.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B0C234F0D396DA30053AC58 /* ExportingProgress.xib */; };
+		5B18D57D0D305D9F000DEFF6 /* fnse_doc.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5B18D57B0D305D9F000DEFF6 /* fnse_doc.icns */; };
+		5B18D57E0D305D9F000DEFF6 /* fluidnoise.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5B18D57C0D305D9F000DEFF6 /* fluidnoise.icns */; };
+		5B762D1F0D41658800ECC4B5 /* AnimationExportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B762D1D0D41658800ECC4B5 /* AnimationExportView.xib */; };
+		5B762DE80D419FF000ECC4B5 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B762DE70D419FF000ECC4B5 /* QTKit.framework */; };
+		5B8336270D9E3AD300C92B9D /* FNImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8336260D9E3AD300C92B9D /* FNImageData.m */; };
+		5B872E030D9CE3FF007C3ED4 /* default_environment_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B872E020D9CE3FF007C3ED4 /* default_environment_map.jpg */; };
+		5B9D9A4C0D42D2E700BA83CB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9D9A4B0D42D2E700BA83CB /* Security.framework */; };
+		5B9D9B560D42FE4300BA83CB /* Water.fnse in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D9B510D42FE4300BA83CB /* Water.fnse */; };
+		5B9D9B570D42FE4300BA83CB /* Terrain.fnse in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D9B520D42FE4300BA83CB /* Terrain.fnse */; };
+		5B9D9B580D42FE4300BA83CB /* Fire.fnse in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D9B530D42FE4300BA83CB /* Fire.fnse */; };
+		5B9D9B590D42FE4300BA83CB /* Clouds.fnse in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D9B540D42FE4300BA83CB /* Clouds.fnse */; };
+		5B9D9B5A0D42FE4300BA83CB /* 70s.fnse in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D9B550D42FE4300BA83CB /* 70s.fnse */; };
+		5B9D9B5E0D42FF2F00BA83CB /* FNController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D9B5D0D42FF2F00BA83CB /* FNController.m */; };
+		5BAF2D2B0D28455800DAC8B8 /* fn_random.c in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF2D0F0D28455800DAC8B8 /* fn_random.c */; };
+		5BAF2D2C0D28455800DAC8B8 /* FNButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF2D120D28455800DAC8B8 /* FNButton.m */; };
+		5BAF2D2E0D28455800DAC8B8 /* FNGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF2D160D28455800DAC8B8 /* FNGradient.m */; };
+		5BAF2D2F0D28455800DAC8B8 /* FNGradientWell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF2D180D28455800DAC8B8 /* FNGradientWell.m */; };
+		5BAF2D300D28455800DAC8B8 /* FNModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF2D1A0D28455800DAC8B8 /* FNModel.m */; };
+		5BAF2D310D28455800DAC8B8 /* FNOptionsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF2D1C0D28455800DAC8B8 /* FNOptionsPanel.m */; };
+		5BAF2D320D28455800DAC8B8 /* FNSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF2D1E0D28455800DAC8B8 /* FNSlider.m */; };
+		5BAF2D330D28455800DAC8B8 /* FNTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF2D200D28455800DAC8B8 /* FNTextField.m */; };
+		5BAF2D340D28455800DAC8B8 /* FNTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF2D220D28455800DAC8B8 /* FNTextLabel.m */; };
+		5BAF2D350D28455800DAC8B8 /* FNView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF2D240D28455800DAC8B8 /* FNView.mm */; };
+		5BAF2D360D28455800DAC8B8 /* Perlin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF2D270D28455800DAC8B8 /* Perlin.m */; };
+		5BB63B3F12B0375F0082911E /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB63B3E12B0375F0082911E /* IOKit.framework */; };
+		5BB63C5112B03B600082911E /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB63C5012B03B600082911E /* QuickTime.framework */; };
+		5BB63DBA12B079F10082911E /* Terrain Detailed.fnse in Resources */ = {isa = PBXBuildFile; fileRef = 5BB63DB912B079F10082911E /* Terrain Detailed.fnse */; };
+		5BBC6A840D2DBF4A00E4AEB2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BBC6A830D2DBF4A00E4AEB2 /* QuartzCore.framework */; };
+		5BBC6B510D2E010A00E4AEB2 /* FNButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC6B500D2E010A00E4AEB2 /* FNButtonCell.m */; };
+		5BBC6B5D0D2E027F00E4AEB2 /* darkButtonRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BBC6B5B0D2E027F00E4AEB2 /* darkButtonRight.png */; };
+		5BBC6B5E0D2E027F00E4AEB2 /* darkButtonLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BBC6B5C0D2E027F00E4AEB2 /* darkButtonLeft.png */; };
+		5BBC6BB20D2E0A4F00E4AEB2 /* FNHorizontalDivider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC6BB10D2E0A4F00E4AEB2 /* FNHorizontalDivider.m */; };
+		5BBC6C580D2E1BE000E4AEB2 /* darkButtonRightInverted.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BBC6C560D2E1BE000E4AEB2 /* darkButtonRightInverted.png */; };
+		5BBC6C590D2E1BE000E4AEB2 /* darkButtonLeftInverted.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BBC6C570D2E1BE000E4AEB2 /* darkButtonLeftInverted.png */; };
+		5BC470A20D2C4413004B59B4 /* OptionsPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC470A00D2C4413004B59B4 /* OptionsPanel.xib */; };
+		5BCA915C12B07BA90050AEE5 /* Frosted Glass.fnse in Resources */ = {isa = PBXBuildFile; fileRef = 5BCA915A12B07BA90050AEE5 /* Frosted Glass.fnse */; };
+		5BCA915D12B07BA90050AEE5 /* Water Reflections.fnse in Resources */ = {isa = PBXBuildFile; fileRef = 5BCA915B12B07BA90050AEE5 /* Water Reflections.fnse */; };
+		5BCA91EE12B09EBE0050AEE5 /* Tiling Noise.fnse in Resources */ = {isa = PBXBuildFile; fileRef = 5BCA91ED12B09EBE0050AEE5 /* Tiling Noise.fnse */; };
+		5BD1C05F0D2C5283002EA407 /* FNOptionsPanelWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1C05E0D2C5283002EA407 /* FNOptionsPanelWindowController.m */; };
+		5BF8AF80200AD0D5004DCA83 /* FNThreadSafeQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8AF7F200AD0D5004DCA83 /* FNThreadSafeQueue.m */; };
+		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
+		8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
+		8D15AC2E0486D014006FF6A4 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */; };
+		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B0C26100D39B9790053AC58 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FBA07B3F13500E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
+		2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDocument.h; sourceTree = "<group>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4B5FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyDocument.nib; sourceTree = "<group>"; };
+		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF750370BD2300C91783 /* FluidNoiseDocumentBased_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FluidNoiseDocumentBased_Prefix.pch; sourceTree = "<group>"; };
+		5B0C1F6D0D31EF940053AC58 /* FNTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNTextFieldCell.h; sourceTree = "<group>"; };
+		5B0C1F6E0D31EF940053AC58 /* FNTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNTextFieldCell.m; sourceTree = "<group>"; };
+		5B0C21880D37490A0053AC58 /* FNMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNMainWindowController.h; sourceTree = "<group>"; };
+		5B0C21890D37490A0053AC58 /* FNMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNMainWindowController.m; sourceTree = "<group>"; };
+		5B0C23020D395EBB0053AC58 /* FNImageExportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNImageExportViewController.h; sourceTree = "<group>"; };
+		5B0C23030D395EBB0053AC58 /* FNImageExportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNImageExportViewController.m; sourceTree = "<group>"; };
+		5B0C23080D3960050053AC58 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ImageExportView.xib; sourceTree = "<group>"; };
+		5B0C23500D396DA30053AC58 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ExportingProgress.xib; sourceTree = "<group>"; };
+		5B18D57B0D305D9F000DEFF6 /* fnse_doc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = fnse_doc.icns; sourceTree = "<group>"; };
+		5B18D57C0D305D9F000DEFF6 /* fluidnoise.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = fluidnoise.icns; sourceTree = "<group>"; };
+		5B18D6BD0D30AACC000DEFF6 /* English */ = {isa = PBXFileReference; lastKnownFileType = folder; name = English; path = Resources/English.lproj/HelpDocs; sourceTree = "<group>"; };
+		5B762D1E0D41658800ECC4B5 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/AnimationExportView.xib; sourceTree = "<group>"; };
+		5B762DE70D419FF000ECC4B5 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		5B8336250D9E3AD300C92B9D /* FNImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNImageData.h; sourceTree = "<group>"; };
+		5B8336260D9E3AD300C92B9D /* FNImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNImageData.m; sourceTree = "<group>"; };
+		5B872DC20D9CBB9B007C3ED4 /* NormalMapGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalMapGenerator.h; sourceTree = "<group>"; };
+		5B872E020D9CE3FF007C3ED4 /* default_environment_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = default_environment_map.jpg; path = Resources/default_environment_map.jpg; sourceTree = "<group>"; };
+		5B9D9A4B0D42D2E700BA83CB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		5B9D9B510D42FE4300BA83CB /* Water.fnse */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Water.fnse; path = Resources/Water.fnse; sourceTree = "<group>"; };
+		5B9D9B520D42FE4300BA83CB /* Terrain.fnse */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Terrain.fnse; path = Resources/Terrain.fnse; sourceTree = "<group>"; };
+		5B9D9B530D42FE4300BA83CB /* Fire.fnse */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Fire.fnse; path = Resources/Fire.fnse; sourceTree = "<group>"; };
+		5B9D9B540D42FE4300BA83CB /* Clouds.fnse */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Clouds.fnse; path = Resources/Clouds.fnse; sourceTree = "<group>"; };
+		5B9D9B550D42FE4300BA83CB /* 70s.fnse */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = 70s.fnse; path = Resources/70s.fnse; sourceTree = "<group>"; };
+		5B9D9B5C0D42FF2F00BA83CB /* FNController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNController.h; sourceTree = "<group>"; };
+		5B9D9B5D0D42FF2F00BA83CB /* FNController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNController.m; sourceTree = "<group>"; };
+		5BAF2D0F0D28455800DAC8B8 /* fn_random.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fn_random.c; sourceTree = "<group>"; };
+		5BAF2D100D28455800DAC8B8 /* fn_random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fn_random.h; sourceTree = "<group>"; };
+		5BAF2D110D28455800DAC8B8 /* FNButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNButton.h; sourceTree = "<group>"; };
+		5BAF2D120D28455800DAC8B8 /* FNButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNButton.m; sourceTree = "<group>"; };
+		5BAF2D150D28455800DAC8B8 /* FNGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNGradient.h; sourceTree = "<group>"; };
+		5BAF2D160D28455800DAC8B8 /* FNGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNGradient.m; sourceTree = "<group>"; };
+		5BAF2D170D28455800DAC8B8 /* FNGradientWell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNGradientWell.h; sourceTree = "<group>"; };
+		5BAF2D180D28455800DAC8B8 /* FNGradientWell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNGradientWell.m; sourceTree = "<group>"; };
+		5BAF2D190D28455800DAC8B8 /* FNModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNModel.h; sourceTree = "<group>"; };
+		5BAF2D1A0D28455800DAC8B8 /* FNModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNModel.m; sourceTree = "<group>"; };
+		5BAF2D1B0D28455800DAC8B8 /* FNOptionsPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNOptionsPanel.h; sourceTree = "<group>"; };
+		5BAF2D1C0D28455800DAC8B8 /* FNOptionsPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNOptionsPanel.m; sourceTree = "<group>"; };
+		5BAF2D1D0D28455800DAC8B8 /* FNSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNSlider.h; sourceTree = "<group>"; };
+		5BAF2D1E0D28455800DAC8B8 /* FNSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSlider.m; sourceTree = "<group>"; };
+		5BAF2D1F0D28455800DAC8B8 /* FNTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNTextField.h; sourceTree = "<group>"; };
+		5BAF2D200D28455800DAC8B8 /* FNTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNTextField.m; sourceTree = "<group>"; };
+		5BAF2D210D28455800DAC8B8 /* FNTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNTextLabel.h; sourceTree = "<group>"; };
+		5BAF2D220D28455800DAC8B8 /* FNTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNTextLabel.m; sourceTree = "<group>"; };
+		5BAF2D230D28455800DAC8B8 /* FNView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNView.h; sourceTree = "<group>"; };
+		5BAF2D240D28455800DAC8B8 /* FNView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FNView.mm; sourceTree = "<group>"; };
+		5BAF2D260D28455800DAC8B8 /* Perlin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Perlin.h; sourceTree = "<group>"; };
+		5BAF2D270D28455800DAC8B8 /* Perlin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Perlin.m; sourceTree = "<group>"; };
+		5BAF2D2A0D28455800DAC8B8 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		5BB63B3E12B0375F0082911E /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		5BB63C5012B03B600082911E /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		5BB63DB912B079F10082911E /* Terrain Detailed.fnse */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Terrain Detailed.fnse"; path = "Resources/Terrain Detailed.fnse"; sourceTree = "<group>"; };
+		5BBC6A830D2DBF4A00E4AEB2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		5BBC6B4F0D2E010A00E4AEB2 /* FNButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNButtonCell.h; sourceTree = "<group>"; };
+		5BBC6B500D2E010A00E4AEB2 /* FNButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNButtonCell.m; sourceTree = "<group>"; };
+		5BBC6B5B0D2E027F00E4AEB2 /* darkButtonRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = darkButtonRight.png; path = Resources/darkButtonRight.png; sourceTree = "<group>"; };
+		5BBC6B5C0D2E027F00E4AEB2 /* darkButtonLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = darkButtonLeft.png; path = Resources/darkButtonLeft.png; sourceTree = "<group>"; };
+		5BBC6BB00D2E0A4F00E4AEB2 /* FNHorizontalDivider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNHorizontalDivider.h; sourceTree = "<group>"; };
+		5BBC6BB10D2E0A4F00E4AEB2 /* FNHorizontalDivider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNHorizontalDivider.m; sourceTree = "<group>"; };
+		5BBC6C560D2E1BE000E4AEB2 /* darkButtonRightInverted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = darkButtonRightInverted.png; path = Resources/darkButtonRightInverted.png; sourceTree = "<group>"; };
+		5BBC6C570D2E1BE000E4AEB2 /* darkButtonLeftInverted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = darkButtonLeftInverted.png; path = Resources/darkButtonLeftInverted.png; sourceTree = "<group>"; };
+		5BC470A10D2C4413004B59B4 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/OptionsPanel.xib; sourceTree = "<group>"; };
+		5BCA915A12B07BA90050AEE5 /* Frosted Glass.fnse */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Frosted Glass.fnse"; path = "Resources/Frosted Glass.fnse"; sourceTree = "<group>"; };
+		5BCA915B12B07BA90050AEE5 /* Water Reflections.fnse */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Water Reflections.fnse"; path = "Resources/Water Reflections.fnse"; sourceTree = "<group>"; };
+		5BCA91ED12B09EBE0050AEE5 /* Tiling Noise.fnse */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Tiling Noise.fnse"; path = "Resources/Tiling Noise.fnse"; sourceTree = "<group>"; };
+		5BD1C05D0D2C5283002EA407 /* FNOptionsPanelWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNOptionsPanelWindowController.h; sourceTree = "<group>"; };
+		5BD1C05E0D2C5283002EA407 /* FNOptionsPanelWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNOptionsPanelWindowController.m; sourceTree = "<group>"; };
+		5BF8AF73200AA482004DCA83 /* OSCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCheck.h; sourceTree = "<group>"; };
+		5BF8AF7E200AD0D5004DCA83 /* FNThreadSafeQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNThreadSafeQueue.h; sourceTree = "<group>"; };
+		5BF8AF7F200AD0D5004DCA83 /* FNThreadSafeQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNThreadSafeQueue.m; sourceTree = "<group>"; };
+		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* Fluid Noise Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fluid Noise Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D15AC330486D014006FF6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+				5BBC6A840D2DBF4A00E4AEB2 /* QuartzCore.framework in Frameworks */,
+				5B762DE80D419FF000ECC4B5 /* QTKit.framework in Frameworks */,
+				5B9D9A4C0D42D2E700BA83CB /* Security.framework in Frameworks */,
+				5BB63B3F12B0375F0082911E /* IOKit.framework in Frameworks */,
+				5BB63C5112B03B600082911E /* QuickTime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+				13E42FBA07B3F13500E4EEF1 /* CoreData.framework */,
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D15AC370486D014006FF6A4 /* Fluid Noise Generator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* FluidNoiseDocumentBased */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+				5BB63B3E12B0375F0082911E /* IOKit.framework */,
+				5BB63C5012B03B600082911E /* QuickTime.framework */,
+			);
+			name = FluidNoiseDocumentBased;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */,
+				2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */,
+				5BAF2D0F0D28455800DAC8B8 /* fn_random.c */,
+				5BAF2D100D28455800DAC8B8 /* fn_random.h */,
+				5BD1C05D0D2C5283002EA407 /* FNOptionsPanelWindowController.h */,
+				5BD1C05E0D2C5283002EA407 /* FNOptionsPanelWindowController.m */,
+				5B0C21880D37490A0053AC58 /* FNMainWindowController.h */,
+				5B0C21890D37490A0053AC58 /* FNMainWindowController.m */,
+				5BAF2D110D28455800DAC8B8 /* FNButton.h */,
+				5BAF2D120D28455800DAC8B8 /* FNButton.m */,
+				5BBC6B4F0D2E010A00E4AEB2 /* FNButtonCell.h */,
+				5BBC6B500D2E010A00E4AEB2 /* FNButtonCell.m */,
+				5BBC6BB00D2E0A4F00E4AEB2 /* FNHorizontalDivider.h */,
+				5BBC6BB10D2E0A4F00E4AEB2 /* FNHorizontalDivider.m */,
+				5BAF2D150D28455800DAC8B8 /* FNGradient.h */,
+				5BAF2D160D28455800DAC8B8 /* FNGradient.m */,
+				5BAF2D170D28455800DAC8B8 /* FNGradientWell.h */,
+				5BAF2D180D28455800DAC8B8 /* FNGradientWell.m */,
+				5BAF2D190D28455800DAC8B8 /* FNModel.h */,
+				5BAF2D1A0D28455800DAC8B8 /* FNModel.m */,
+				5BAF2D1B0D28455800DAC8B8 /* FNOptionsPanel.h */,
+				5BAF2D1C0D28455800DAC8B8 /* FNOptionsPanel.m */,
+				5BAF2D1D0D28455800DAC8B8 /* FNSlider.h */,
+				5BAF2D1E0D28455800DAC8B8 /* FNSlider.m */,
+				5BAF2D1F0D28455800DAC8B8 /* FNTextField.h */,
+				5BAF2D200D28455800DAC8B8 /* FNTextField.m */,
+				5B0C1F6D0D31EF940053AC58 /* FNTextFieldCell.h */,
+				5B0C1F6E0D31EF940053AC58 /* FNTextFieldCell.m */,
+				5BAF2D210D28455800DAC8B8 /* FNTextLabel.h */,
+				5BAF2D220D28455800DAC8B8 /* FNTextLabel.m */,
+				5B0C23020D395EBB0053AC58 /* FNImageExportViewController.h */,
+				5B0C23030D395EBB0053AC58 /* FNImageExportViewController.m */,
+				5B8336250D9E3AD300C92B9D /* FNImageData.h */,
+				5B8336260D9E3AD300C92B9D /* FNImageData.m */,
+				5B872DC20D9CBB9B007C3ED4 /* NormalMapGenerator.h */,
+				5B9D9B5C0D42FF2F00BA83CB /* FNController.h */,
+				5B9D9B5D0D42FF2F00BA83CB /* FNController.m */,
+				5BF8AF7E200AD0D5004DCA83 /* FNThreadSafeQueue.h */,
+				5BF8AF7F200AD0D5004DCA83 /* FNThreadSafeQueue.m */,
+				5BAF2D230D28455800DAC8B8 /* FNView.h */,
+				5BAF2D240D28455800DAC8B8 /* FNView.mm */,
+				5BF8AF73200AA482004DCA83 /* OSCheck.h */,
+				5BAF2D260D28455800DAC8B8 /* Perlin.h */,
+				5BAF2D270D28455800DAC8B8 /* Perlin.m */,
+				5BAF2D2A0D28455800DAC8B8 /* Color.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF750370BD2300C91783 /* FluidNoiseDocumentBased_Prefix.pch */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B0C1EA20D30AE550053AC58 /* HelpDocs */,
+				5B18D57B0D305D9F000DEFF6 /* fnse_doc.icns */,
+				5B18D57C0D305D9F000DEFF6 /* fluidnoise.icns */,
+				5BBC6B5B0D2E027F00E4AEB2 /* darkButtonRight.png */,
+				5BBC6B5C0D2E027F00E4AEB2 /* darkButtonLeft.png */,
+				5BBC6C560D2E1BE000E4AEB2 /* darkButtonRightInverted.png */,
+				5BBC6C570D2E1BE000E4AEB2 /* darkButtonLeftInverted.png */,
+				5B872E020D9CE3FF007C3ED4 /* default_environment_map.jpg */,
+				5BCA91ED12B09EBE0050AEE5 /* Tiling Noise.fnse */,
+				5B9D9B510D42FE4300BA83CB /* Water.fnse */,
+				5B9D9B520D42FE4300BA83CB /* Terrain.fnse */,
+				5BB63DB912B079F10082911E /* Terrain Detailed.fnse */,
+				5B9D9B530D42FE4300BA83CB /* Fire.fnse */,
+				5B9D9B540D42FE4300BA83CB /* Clouds.fnse */,
+				5BCA915A12B07BA90050AEE5 /* Frosted Glass.fnse */,
+				5BCA915B12B07BA90050AEE5 /* Water Reflections.fnse */,
+				5B9D9B550D42FE4300BA83CB /* 70s.fnse */,
+				5B762D1D0D41658800ECC4B5 /* AnimationExportView.xib */,
+				5B0C23070D3960050053AC58 /* ImageExportView.xib */,
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				5BC470A00D2C4413004B59B4 /* OptionsPanel.xib */,
+				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
+				2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */,
+				5B0C234F0D396DA30053AC58 /* ExportingProgress.xib */,
+				8D15AC360486D014006FF6A4 /* Info.plist */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BBC6A830D2DBF4A00E4AEB2 /* QuartzCore.framework */,
+				5B9D9A4B0D42D2E700BA83CB /* Security.framework */,
+				5B762DE70D419FF000ECC4B5 /* QTKit.framework */,
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D15AC270486D014006FF6A4 /* FluidNoise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "FluidNoise" */;
+			buildPhases = (
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8D15AC300486D014006FF6A4 /* Sources */,
+				8D15AC330486D014006FF6A4 /* Frameworks */,
+				5B0C26100D39B9790053AC58 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FluidNoise;
+			productInstallPath = "$(HOME)/Applications";
+			productName = FluidNoiseDocumentBased;
+			productReference = 8D15AC370486D014006FF6A4 /* Fluid Noise Generator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				TargetAttributes = {
+					8D15AC270486D014006FF6A4 = {
+						DevelopmentTeam = 9Q78V5BF2N;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "FluidNoiseDocumentBased" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* FluidNoiseDocumentBased */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D15AC270486D014006FF6A4 /* FluidNoise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D15AC2B0486D014006FF6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
+				8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */,
+				8D15AC2E0486D014006FF6A4 /* MyDocument.nib in Resources */,
+				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
+				5BC470A20D2C4413004B59B4 /* OptionsPanel.xib in Resources */,
+				5BBC6B5D0D2E027F00E4AEB2 /* darkButtonRight.png in Resources */,
+				5BBC6B5E0D2E027F00E4AEB2 /* darkButtonLeft.png in Resources */,
+				5BBC6C580D2E1BE000E4AEB2 /* darkButtonRightInverted.png in Resources */,
+				5BBC6C590D2E1BE000E4AEB2 /* darkButtonLeftInverted.png in Resources */,
+				5B18D57D0D305D9F000DEFF6 /* fnse_doc.icns in Resources */,
+				5B18D57E0D305D9F000DEFF6 /* fluidnoise.icns in Resources */,
+				5B0C1EA30D30AE550053AC58 /* HelpDocs in Resources */,
+				5B0C23090D3960050053AC58 /* ImageExportView.xib in Resources */,
+				5B0C23510D396DA30053AC58 /* ExportingProgress.xib in Resources */,
+				5B762D1F0D41658800ECC4B5 /* AnimationExportView.xib in Resources */,
+				5B9D9B560D42FE4300BA83CB /* Water.fnse in Resources */,
+				5B9D9B570D42FE4300BA83CB /* Terrain.fnse in Resources */,
+				5B9D9B580D42FE4300BA83CB /* Fire.fnse in Resources */,
+				5B9D9B590D42FE4300BA83CB /* Clouds.fnse in Resources */,
+				5B9D9B5A0D42FE4300BA83CB /* 70s.fnse in Resources */,
+				5B872E030D9CE3FF007C3ED4 /* default_environment_map.jpg in Resources */,
+				5BB63DBA12B079F10082911E /* Terrain Detailed.fnse in Resources */,
+				5BCA915C12B07BA90050AEE5 /* Frosted Glass.fnse in Resources */,
+				5BCA915D12B07BA90050AEE5 /* Water Reflections.fnse in Resources */,
+				5BCA91EE12B09EBE0050AEE5 /* Tiling Noise.fnse in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D15AC300486D014006FF6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */,
+				8D15AC320486D014006FF6A4 /* main.m in Sources */,
+				5BAF2D2B0D28455800DAC8B8 /* fn_random.c in Sources */,
+				5BAF2D2C0D28455800DAC8B8 /* FNButton.m in Sources */,
+				5BAF2D2E0D28455800DAC8B8 /* FNGradient.m in Sources */,
+				5BAF2D2F0D28455800DAC8B8 /* FNGradientWell.m in Sources */,
+				5BAF2D300D28455800DAC8B8 /* FNModel.m in Sources */,
+				5BAF2D310D28455800DAC8B8 /* FNOptionsPanel.m in Sources */,
+				5BAF2D320D28455800DAC8B8 /* FNSlider.m in Sources */,
+				5BAF2D330D28455800DAC8B8 /* FNTextField.m in Sources */,
+				5BAF2D340D28455800DAC8B8 /* FNTextLabel.m in Sources */,
+				5BAF2D350D28455800DAC8B8 /* FNView.mm in Sources */,
+				5BF8AF80200AD0D5004DCA83 /* FNThreadSafeQueue.m in Sources */,
+				5BAF2D360D28455800DAC8B8 /* Perlin.m in Sources */,
+				5BD1C05F0D2C5283002EA407 /* FNOptionsPanelWindowController.m in Sources */,
+				5BBC6B510D2E010A00E4AEB2 /* FNButtonCell.m in Sources */,
+				5BBC6BB20D2E0A4F00E4AEB2 /* FNHorizontalDivider.m in Sources */,
+				5B0C1F6F0D31EF940053AC58 /* FNTextFieldCell.m in Sources */,
+				5B0C218A0D37490A0053AC58 /* FNMainWindowController.m in Sources */,
+				5B0C23040D395EBB0053AC58 /* FNImageExportViewController.m in Sources */,
+				5B9D9B5E0D42FF2F00BA83CB /* FNController.m in Sources */,
+				5B8336270D9E3AD300C92B9D /* FNImageData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B5FDCFA73011CA2CEA /* English */,
+			);
+			name = MyDocument.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B7FDCFA73011CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4BAFDCFA73011CA2CEA /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5B0C1EA20D30AE550053AC58 /* HelpDocs */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B18D6BD0D30AACC000DEFF6 /* English */,
+			);
+			name = HelpDocs;
+			sourceTree = "<group>";
+		};
+		5B0C23070D3960050053AC58 /* ImageExportView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B0C23080D3960050053AC58 /* English */,
+			);
+			name = ImageExportView.xib;
+			sourceTree = "<group>";
+		};
+		5B0C234F0D396DA30053AC58 /* ExportingProgress.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B0C23500D396DA30053AC58 /* English */,
+			);
+			name = ExportingProgress.xib;
+			sourceTree = "<group>";
+		};
+		5B762D1D0D41658800ECC4B5 /* AnimationExportView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B762D1E0D41658800ECC4B5 /* English */,
+			);
+			name = AnimationExportView.xib;
+			sourceTree = "<group>";
+		};
+		5BC470A00D2C4413004B59B4 /* OptionsPanel.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BC470A10D2C4413004B59B4 /* English */,
+			);
+			name = OptionsPanel.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C05733C808A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 9Q78V5BF2N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FluidNoiseDocumentBased_Prefix.pch;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.majicjungle.fluidnoise;
+				PRODUCT_NAME = "Fluid Noise Generator";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				VALID_ARCHS = "x86_64 i386";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C05733C908A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9Q78V5BF2N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FluidNoiseDocumentBased_Prefix.pch;
+				GCC_UNROLL_LOOPS = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.majicjungle.fluidnoise;
+				PRODUCT_NAME = "Fluid Noise Generator";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				VALID_ARCHS = "x86_64 i386";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C05733CC08A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C05733CD08A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "FluidNoise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733C808A9546B00998B17 /* Debug */,
+				C05733C908A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "FluidNoiseDocumentBased" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733CC08A9546B00998B17 /* Debug */,
+				C05733CD08A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}

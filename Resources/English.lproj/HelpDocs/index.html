@@ -1,0 +1,141 @@
+
+
+<HTML>
+
+  <HEAD>
+    <META HTTP-EQUIV="content-type" CONTENT="text/html;charset=iso-8859-1">
+    <TITLE>Fluid Noise Generator Help</TITLE>
+    <META NAME="AppleTitle" CONTENT="Fluid Noise Generator Help">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+  </HEAD>
+
+  <BODY>
+<div class="padded">
+<h1>Fluid Noise Generator Help</h1>
+<br/>
+
+<p>
+Fluid Noise Generator uses natural looking random noise to create images and movies from scratch.
+</p>
+<p>
+With a simple yet powerful interface, Fluid Noise Generator can generate anything from clouds, fire or water to marble, wood grain or rusty metal.
+</p>
+<p>
+Fluid Noise Generator is perfect if you find the cloud filters or noise generators in other applications lacking in flexibility, or maybe you just need to create a grunge texture to roughen up your photos, generate a terrain bump map, or create an animation for a movie.
+</p>
+
+<h1>Contact</h1>
+<br/>
+<p>
+    For more information visit <a href="http://majicjungle.com/fluidnoise.html">http://majicjungle.com/fluidnoise.html</a>. For support enquiries please email <a href="mailto:developer@majicjungle.com">developer@majicjungle.com</a>.
+</p>
+
+<h1>Starting Hints</h1>
+<br/>
+<p>
+You can open a template image via the File Menu -> Open Template, to get you started. Play with the X and Y zoom settings, and the gradient editor. Click on a color spot in the gradient editor to change it's color. Add new color spots by clicking just under the gradient bar. Click the 'Preview Animation' button to see what your creation looks like animated.
+</p>
+
+<h1>Options</h1>
+<br/>
+
+<p>
+What follows is a description of the various parameters you can change in the options panel.
+</p>
+
+<h2>Width</h2>
+<p>
+The width of the document in pixels.
+</p>
+
+<h2>Height</h2>
+<p>
+The height of the document in pixels.
+</p>
+
+<h2>Octaves</h2>
+<p>
+The number of levels of detail. Higher values will show greater detail, but take longer to render. Lower values make the result smoother in appearance.
+</p>
+
+<h2>X Zoom</h2>
+<p>
+The horizontal frequency. Higher values will appear to compress the output horizontally. Each increment appears to double the compression, as
+the actual value used is 2^(x * 0.5) where x is the value displayed in the text field.
+</p>
+
+<h2>Y Zoom</h2>
+<p>
+The vertical frequency. Same as X Zoom, but vertical.
+</p>
+
+<h2>Persistence</h2>
+<p>
+The fraction of each octave that is added to the noise output. Low values will weight the lower resolution octaves higher, resulting in an image with high variation over broad areas and low variation in the detail. High persistence increases the weight of detailed octaves, and will increase the maximum possible value, so amplitude may need to be lowered.
+</p>
+
+<h2>Amplitude</h2>
+<p>
+Overall scaling of noise output values. Low amplitude will cause the image to mostly output the colors at the bottom of the gradient, high values will end up clamping to the color at the top of the gradient.
+</p>
+
+<h2>Tile Seamlessly</h2>
+<p>
+Makes the result tile. This means that the the left side will match perfectly with the right, and likewise vertically.
+</p>
+
+<h2>Seed</h2>
+<p>
+Used to initialize the random generator. Every value will generate a unique random image. The Random button generates a random seed which will create a new random image. If you use the same number, you will get the same result.
+</p>
+
+<h2>Output Type</h2>
+<p><ul>
+<li>Gradient - Maps color to noise output values. The currently selected color swatch is brighter and has a filled background. Add swatches by clicking on the gradient, or by dragging colors from the color picker. Click on a swatch to change its color, or drag it to change its location. The delete button will delete the selected swatch.</li>
+<li>Normal Map - Creates a normal map of the generated noise intended for use in 3D software/development.</li>
+<li>Environment Map - Uses the normal map to then look up values in an image you supply. Good for simulating reflective surfaces like water.</li>
+<li>Image Distortion - Uses the normal map to then look up values in an image you supply. Similar to environment map, but instead of treating each normal as an offset from the center of the supplied image, it offsets from each pixel.</li>
+</ul></p>
+
+
+<h2>Duration</h2>
+<p>
+The duration in seconds that the animation will run for. Long durations will slow down the animation, so the animation speed may need to be increased. The maximum duration allowed is 10 minutes, but with large images and long durations the amount of available memory may cause problems while animating or exporting movies.
+</p>
+
+<h2>Speed</h2>
+<p>
+The animation frequency. This has similar properties to the X and Y Zoom sliders, but modifies the result over the animation duration.
+</p>
+
+<h2>Loop Seamlessly</h2>
+<p>
+Makes the animation seamlessly loop, so the last frame matches with the first.
+</p>
+
+<h2>Preview Animation</h2>
+<p>
+Starts the animation in the main window. On the first run-through it displays a progress indicator and generates the animation as quickly as it can. Thereafter the preview animation runs at 30fps if possible. If the document size is larger than what can be rendered in time, it may run slower than 30fps. To stop the preview animation click the button again.
+</p>
+
+
+<h1>Exporting Images</h1>
+<br/>
+<p>
+The easiest way to export an image is to drag from the preview window. This will create a png image wherever you drop. Otherwise you can use the File->Export To Image... menu item. This will allow you to export in other formats, or as a 32 bit floating point image. 
+
+32 bit images can be exported in TIFF or EXR format, and either the unmodified noise buffer or the resulting colored image can be exported.
+</p>
+
+<h1>Exporting Movies</h1>
+<br/>
+<p>
+By using the File->Export To Animation... menu item you can export the current document to a movie or image sequence. Choose the export format you would like, and use the Options button to configure the options for that codec.<br/><br/>
+Please note that due to limitations in QuickTime, currently frame rates with fractional values are not supported, and may lead to unpredictable results. So 30 or 60 fps is fine, whereas 29.97 or 59.94 fps may not work the way you intended.<br/><br/>
+</p>
+
+
+</div>
+  </BODY>
+
+</HTML>
