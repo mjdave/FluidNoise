@@ -1,5 +1,5 @@
 
-![screenshots/screenshot1.png]
+![screenshot](screenshots/screenshot1.png)
 
 ## Usage and History
 
